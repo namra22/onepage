@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.html{
+    scroll-behavior: smooth;
+}
+nav{
+    z-index: 999;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(./img/karakoram1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    animation: change 30s infinite ease-in-out;
+   
+}
+.container{
+   
+    width:100%;
+}
+.opacity {
+    color:  grey;
+}
+.section-title {
+	font-size: 4rem;
+	font-weight: 300;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+.section-title span{
+    color:white;
+}
+nav{
+    display: flex;
+   background-color: rgb(31, 30, 30,0.45);
+    padding:2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+     width:100%;
+     height: 70px;
+}
+nav img{
+    width:150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+color:#fff;
+text-decoration: none;
+font-size: 20px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+transition: 0.3s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.textBox{
+    width: 90%;
+    color:white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.textBox h1{
+    font-size:50px;
+    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px 8px black;
+   
+}
+.textBox p{
+    font-size:35px;
+    text-shadow: 3px 3px black;
+    text-shadow: 2px 2px 8px black;
+}
+.herobtn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border:1px solid white;
+    padding:12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position:relative;
+    cursor:pointer;
+}
+.herobtn:hover{
+    border:1px solid black;
+    background:black ;
+    transition:1s;
+}
+@keyframes change{
+    0%
+    {
+background-image: url(./img/kkfinal.jpg);
+
+    } 
+    20%
+    {
+        background-image: url(./img/kyun1.jfif);
+    }
+    40%
+    {
+        background-image: url(./img/awaz.jfif);
+    }
+   
+    60%
+    {
+        background-image: url(./img/awaz.jfif);
+    }
+}
+/*------------------band-----------*/
+#band .image .im{
+    flex-basis: 20%;
+    margin:2%;
+}
+#band .image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+   
+}
+#band .image .im img{
+    height: 200px;
+    width:200px;
+    border-radius: 6px;
+   
+}
+#band{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.band{
+    max-width:90%;
+   
+    
+}
+#band .text {
+    margin-top: 50px;
+}
+#band .text p{
+    font-size: 20px;
+   font-weight: 300;
+    text-align: center;
+}
+
+
+#band .im img {
+	transition: 0.3s ease transform;
+}
+#band .im:hover img {
+	transform: scale(1.1);
+}
+#band .image p{
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*-------------endband---------------*/
+
+/*-------------tour--------------*/
+#tour .text p{
+    text-align: center;
+}
+.tour{
+    background-color: black;
+    width:100%;
+   align-items: center;
+  
+   display: flex;
+   justify-content: center;
+}
+#tour .tour-content{
+    margin-top: 20px;
+   
+  
+   width:80%;
+}
+.tour-content .textgrey {
+   color:white;
+
+}
+
+.tour-content .bars{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.tour-content .bars .bar{
+    background-color: white;
+    padding: 10px 10px;
+    border-bottom: 2px solid lightgray;
+    
+}
+.tour-content .bars  .a{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.notav{
+    margin-left: 20px;
+    background-color: red;
+    color:white;
+    padding: 2px 2px;
+}
+.av{
+   
+    background-color: black;
+    color:white;
+    border-radius: 50%;
+    width:25px;
+    height: 25px;
+    display: inline-block;
+  text-align: center;
+
+}
+ .tour-content .cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+   
+}
+.tour-content .cards .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:1.5%;
+    flex-basis: 33.3%;
+    color:white; 
+   border-radius: 6px;
+   
+}
+.tour-content .cards .card .img{
+    height: 320px;
+    width:100%;
+}
+.tour-content .cards .card .text{
+    height: 320px;
+    width:100%;
+}
+.tour-content .cards .card img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+.tour-content .cards .card .text{
+    margin-top: 0;
+    background-color: white;
+}
+.tour-content .cards .card .name{
+    color:black;
+    font-weight:400;
+    margin-left: 10px;
+    text-align: center;
+}
+.concert{
+    color:black;
+
+}
+.buy{
+    background-color: black;
+    color:white;
+    text-decoration: none;
+    margin-left: 20px;
+    display: inline-block;
+    padding:12px 34px;
+    font-size: 20px;
+    position:relative;
+    cursor:pointer;
+}
+.buy:hover{
+    border:1px solid white;
+    background:red ;
+    transition:1s;
+    color:black;
+}
+/*--------------------endtour------------*/
+
+/*------------------latest-----------*/
+.latest{
+    width:100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+.text{
+    margin-top: 50px;
+}
+.latest .image{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;   
+}
+.latest .image .im{
+    flex-basis: 30%;
+    margin:5%;
+}
+.latest .image .im img{
+    height: 400px;
+    width:400px;
+    border-radius: 6px;
+    object-fit: cover;
+    
+}
+.latest .image .im a{
+    color:black;
+}
+.latest .image .im a:hover{
+    transition:1s;
+    color:red;
+}
+/*-------------endlatest-------------*/
+/*------------contact--------------*/
+.contact{
+    position:relative;
+    min-height: 100vh;
+    padding:50px 100px;
+   background-color: black;
+}
+.contact .text1 p{
+    font-size: 20px;
+   font-weight: 300;
+    text-align: center;
+}
+.contact .text1 h2{
+    color:white;
+}
+.contain{
+
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+    
+   
+}
+.contain .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+.contain .contactInfo .box{
+    position: relative;
+padding:20px 0 ;
+display:flex;
+}
+.contain .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background:white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+.contain .contactInfo .box .text2{
+    display: flex;
+    margin-left: 5px;
+    font-size: 16px;
+    color: white;
+    flex-direction: column;
+   font-weight: 300;
+
+}
+.contactForm{
+    min-width:40%;
+    padding:40px;
+    background: white;
+}
+.contactForm h2{
+    font-size: 30px;
+    color:black;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input{
+    width:100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding:5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    transition: 0.3s;
+    color:grey;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color:red;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width:100px;
+    background: black;
+    color:white;
+    border:none;
+    cursor:pointer;
+    padding:10px;
+    font-size: 18px;
+}
+/*-----------endContact-----------*/
+/*-----------footer------------*/
+footer{
+    background-color: #111;
+    padding: 20px 25px;
+    color:white;
+    text-align: center;
+}
+footer span{
+    color :white;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+/*---------------endfooter-------*/
+
+@media screen and (max-width:800px){
+    .tour-content .cards{
+        flex-direction: column;
+        
+    }
+    .tour-content .cards .card .text{
+        height:250px;
+    }
+    #band .image{
+       flex-wrap: wrap;
+    }
+    #band .image .im{
+        flex-basis: 45%;
+        margin:2.5%;
+    }
+    .latest .image{
+      flex-wrap: wrap;  
+    }
+    .latest .image .im{
+     flex-basis: 25%;
+     margin:1.5%;
+    }
+   
+    .contact-content {
+        flex-wrap: wrap;
+    }
+    .contain{
+        flex-direction: column;
+    }
+    .contain .contactForm{
+   margin-top: 20px;
+    width:100%;
+   
+    }
+    .contain .contactInfo{
+        flex-basis: 100%; 
+        
+        width:100%;
+    }
+}
